@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 15</title></head>
+<body>
+  <h3>Ejercicio 15</h3>
+  <button onclick="promedioNotas()">Promedio</button>
+  <div id="resultado"></div>
+  <script>
+    function promedioNotas() {
+      let notas = [];
+      for (let i = 0; i < 5; i++) {
+        let nota = parseFloat(prompt(Ingrese nota ${i+1}));
+        if (!isNaN(nota)) notas.push(nota);
+      }
+      const prom = notas.reduce((a,b) => a + b, 0) / notas.length;
+      document.getElementById("resultado").innerText = "Promedio: " + prom.toFixed(2);
+    }
+  </script>
+</body>
+</html>
+
+

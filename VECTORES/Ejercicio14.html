@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 14</title></head>
+<body>
+  <h3>Ejercicio 14</h3>
+  <button onclick="invertir()">Invertir</button>
+  <div id="resultado"></div>
+  <script>
+    function invertir() {
+      const V = [1, 2, 3, 4, 5];
+      const invertido = [...V].reverse();
+      document.getElementById("resultado").innerText = "Invertido: [" + invertido.join(", ") + "]";
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 11</title></head>
+<body>
+  <h3>Ejercicio 11</h3>
+  <button onclick="buscarNumero()">Buscar Número</button>
+  <div id="resultado"></div>
+  <script>
+    function buscarNumero() {
+      const V = [10, 20, 30, 40, 50];
+      const num = parseInt(prompt("Ingrese número a buscar"));
+      const encontrado = V.includes(num);
+      document.getElementById("resultado").innerText = encontrado ? "Sí está" : "No está";
+    }
+  </script>
+</body>
+</html>

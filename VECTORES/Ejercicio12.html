@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 12</title></head>
+<body>
+  <h3>Ejercicio 12</h3>
+  <button onclick="mayor()">Buscar Mayor</button>
+  <div id="resultado"></div>
+  <script>
+    function mayor() {
+      const V = [12, 45, 33, 89, 22];
+      const max = Math.max(...V);
+      document.getElementById("resultado").innerText = "Mayor: " + max;
+    }
+  </script>
+</body>
+</html>

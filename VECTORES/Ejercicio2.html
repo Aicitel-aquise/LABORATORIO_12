@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 2</title>
+</head>
+<body>
+  <h2>Ejercicio 2: Llenar y mostrar vector de nombres</h2>
+  <button onclick="mostrarNombres()">Mostrar Vector</button>
+  <p id="resultado"></p>
+  <script>
+    function mostrarNombres() {
+      const N = ["PAULA", "LETICIA", "NATALIO", "GONZALO", "ANGELA"];
+      document.getElementById("resultado").innerText = "N = [" + N.join(", ") + "]";
+    }
+  </script>
+</body>
+</html>
+
+

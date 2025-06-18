@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 3</title>
+</head>
+<body>
+  <h2>Ejercicio 3: Mostrar nombres como vectores de caracteres</h2>
+  <button onclick="mostrarNombres()">Mostrar</button>
+  <pre id="resultado"></pre>
+  <script>
+    function mostrarNombres() {
+      const nombres = ["PAULA", "LETICIA", "NATALIO", "GONZALO", "ANGELA"];
+      let resultado = "";
+      nombres.forEach((nombre, i) => {
+        const letras = nombre.split('');
+        resultado += N${i+1} = ${letras.join(" ")}\\n;
+      });
+      document.getElementById("resultado").innerText = resultado;
+    }
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 8</title></head>
+<body>
+  <h3>Ejercicio 8</h3>
+  <button onclick="promediar()">Calcular Promedio</button>
+  <div id="resultado"></div>
+  <script>
+    function promediar() {
+      const edades = [23, 25, 30, 19, 21];
+      const prom = edades.reduce((a, b) => a + b, 0) / edades.length;
+      document.getElementById("resultado").innerText = "Promedio: " + prom.toFixed(2);
+    }
+  </script>
+</body>
+</html>

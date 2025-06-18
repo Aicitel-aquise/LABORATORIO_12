@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 17</title></head>
+<body>
+  <h3>Ejercicio 17</h3>
+  <button onclick="contarMayores()">Contar Mayores a 50</button>
+  <div id="resultado"></div>
+  <script>
+    function contarMayores() {
+      const V = [23, 55, 60, 18, 90];
+      const cantidad = V.filter(n => n > 50).length;
+      document.getElementById("resultado").innerText = "Mayores a 50: " + cantidad;
+    }
+  </script>
+</body>
+</html>

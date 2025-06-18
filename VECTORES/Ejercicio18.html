@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 18</title></head>
+<body>
+  <h3>Ejercicio 18</h3>
+  <button onclick="contar()">Contar Pares e Impares</button>
+  <div id="resultado"></div>
+  <script>
+    function contar() {
+      const V = [1, 2, 3, 4, 5, 6];
+      const pares = V.filter(n => n % 2 === 0).length;
+      const impares = V.length - pares;
+      document.getElementById("resultado").innerText = Pares: ${pares}, Impares: ${impares};
+    }
+  </script>
+</body>
+</html>
+

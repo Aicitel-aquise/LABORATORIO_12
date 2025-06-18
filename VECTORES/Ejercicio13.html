@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 13</title></head>
+<body>
+  <h3>Ejercicio 13</h3>
+  <button onclick="menor()">Buscar Menor</button>
+  <div id="resultado"></div>
+  <script>
+    function menor() {
+      const V = [12, 45, 33, 89, 22];
+      const min = Math.min(...V);
+      document.getElementById("resultado").innerText = "Menor: " + min;
+    }
+  </script>
+</body>
+</html>

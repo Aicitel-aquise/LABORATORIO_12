@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 26</title></head>
+<body>
+  <h3>Ejercicio 26</h3>
+  <button onclick="contar()">Contar apariciones</button>
+  <div id="resultado"></div>
+  <script>
+    function contar() {
+      const V = [3, 5, 3, 2, 3, 7];
+      const num = parseInt(prompt("Número a buscar:"));
+      const cantidad = V.filter(n => n === num).length;
+      document.getElementById("resultado").innerText = Aparece ${cantidad} veces;
+    }
+  </script>
+</body>
+</html>

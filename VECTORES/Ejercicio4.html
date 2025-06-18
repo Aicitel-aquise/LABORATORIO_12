@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 4</title></head>
+<body>
+  <h3>Ejercicio 4</h3>
+  <button onclick="ingresar()">Ingresar</button>
+  <pre id="resultado"></pre>
+  <script>
+    function ingresar() {
+      let resultado = "";
+      for (let i = 0; i < 10; i++) {
+        let nombre = prompt(Ingrese el nombre ${i+1});
+        if (nombre) resultado += N${i+1} = ${nombre.toUpperCase().split("").join(" ")}\n;
+      }
+      document.getElementById("resultado").innerText = resultado;
+    }
+  </script>
+</body>
+</html>

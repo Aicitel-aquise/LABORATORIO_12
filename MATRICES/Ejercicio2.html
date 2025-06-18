@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matriz 2</title>
+</head>
+<body>
+  <h2>Ejercicio Matriz 2</h2>
+  <button onclick="ejecutar()">Ejecutar</button>
+  <div id="resultado"></div>
+
+  <script>
+    function llenarMatriz(matriz) {
+      for (let i = 0; i < 3; i++) {
+        matriz[i] = [];
+        for (let j = 0; j < 3; j++) {
+          matriz[i][j] = parseInt(prompt(Ingrese el valor para la posición [${i}][${j}]));
+        }
+      }
+    }
+
+    function mostrarMatriz(matriz) {
+      let salida = "<h3>Matriz ingresada:</h3><table border='1'>";
+      for (let i = 0; i < 3; i++) {
+        salida += "<tr>";
+        for (let j = 0; j < 3; j++) {
+          salida += <td>${matriz[i][j]}</td>;
+        }
+        salida += "</tr>";
+      }
+      salida += "</table>";
+      return salida;
+    }
+
+    function ejecutar() {
+      let matriz = [];
+      llenarMatriz(matriz);
+      document.getElementById("resultado").innerHTML = mostrarMatriz(matriz);
+    }
+  </script>
+</body>
+</html>
+
+
+

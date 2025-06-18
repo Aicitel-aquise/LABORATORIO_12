@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 19</title></head>
+<body>
+  <h3>Ejercicio 19</h3>
+  <button onclick="intercambiar()">Intercambiar</button>
+  <div id="resultado"></div>
+  <script>
+    function intercambiar() {
+      const V = [10, 20, 30, 40, 50];
+      [V[0], V[V.length - 1]] = [V[V.length - 1], V[0]];
+      document.getElementById("resultado").innerText = "Vector nuevo: [" + V.join(", ") + "]";
+    }
+  </script>
+</body>
+</html>
+

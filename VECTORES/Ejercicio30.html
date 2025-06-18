@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 30</title></head>
+<body>
+  <h3>Ejercicio 30</h3>
+  <button onclick="ordenarDesc()">Ordenar descendente</button>
+  <div id="resultado"></div>
+  <script>
+    function ordenarDesc() {
+      let V = [5, 3, 8, 1, 4];
+      V.sort((a, b) => b - a);
+      document.getElementById("resultado").innerText = "Descendente: [" + V.join(", ") + "]";
+    }
+  </script>
+</body>
+</html>
+

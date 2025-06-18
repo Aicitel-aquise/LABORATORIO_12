@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 22</title></head>
+<body>
+  <h3>Ejercicio 22</h3>
+  <button onclick="clonar()">Clonar vector</button>
+  <div id="resultado"></div>
+  <script>
+    function clonar() {
+      const A = [1, 2, 3, 4, 5];
+      const B = [...A];
+      document.getElementById("resultado").innerText = "Clon B = [" + B.join(", ") + "]";
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 28</title></head>
+<body>
+  <h3>Ejercicio 28</h3>
+  <button onclick="eliminar()">Eliminar</button>
+  <div id="resultado"></div>
+  <script>
+    function eliminar() {
+      let V = [10, 20, 30, 40];
+      let pos = parseInt(prompt("Posición a eliminar (0 a " + (V.length-1) + "):"));
+      if (!isNaN(pos) && pos >= 0 && pos < V.length) {
+        V.splice(pos, 1);
+        document.getElementById("resultado").innerText = "Vector actualizado: [" + V.join(", ") + "]";
+      } else {
+        document.getElementById("resultado").innerText = "Posición inválida.";
+      }
+    }
+  </script>
+</body>
+</html>
+

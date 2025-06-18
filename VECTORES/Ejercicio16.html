@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 16</title></head>
+<body>
+  <h3>Ejercicio 16</h3>
+  <button onclick="multiplicar()">Multiplicar</button>
+  <div id="resultado"></div>
+  <script>
+    function multiplicar() {
+      const V = [2, 3, 4];
+      const total = V.reduce((a, b) => a * b, 1);
+      document.getElementById("resultado").innerText = "Multiplicación total: " + total;
+    }
+  </script>
+</body>
+</html>

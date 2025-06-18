@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 10</title></head>
+<body>
+  <h3>Ejercicio 10</h3>
+  <button onclick="sumar()">Sumar</button>
+  <div id="resultado"></div>
+  <script>
+    function sumar() {
+      const V = [4, 5, 6, 3, 2];
+      const suma = V.reduce((a, b) => a + b, 0);
+      document.getElementById("resultado").innerText = "Suma total: " + suma;
+    }
+  </script>
+</body>
+</html>

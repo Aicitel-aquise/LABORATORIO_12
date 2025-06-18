@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio 1</title>
+</head>
+<body>
+  <h2>Ejercicio 1: Llenar y mostrar el vector</h2>
+  <button onclick="mostrarVector()">Mostrar Vector</button>
+  <p id="resultado"></p>
+  <script>
+    function mostrarVector() {
+      const V = [8, 5, 2, 4, 7, 9, 2, 3, 1];
+      document.getElementById("resultado").innerText = "V = [" + V.join(", ") + "]";
+    }
+    </script>
+</body>
+</html>
+

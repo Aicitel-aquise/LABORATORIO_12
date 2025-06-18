@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 9</title></head>
+<body>
+  <h3>Ejercicio 9</h3>
+  <button onclick="buscar()">Buscar</button>
+  <div id="resultado"></div>
+  <script>
+    function buscar() {
+      const nombres = ["PAULA", "LETICIA", "NATALIO", "GONZALO", "ANGELA"];
+      let nombre = prompt("Ingrese un nombre").toUpperCase();
+      let existe = nombres.includes(nombre);
+      document.getElementById("resultado").innerText = existe ? "Sí está" : "No está";
+    }
+  </script>
+</body>
+</html>

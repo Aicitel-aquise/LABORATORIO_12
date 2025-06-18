@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 5</title></head>
+<body>
+  <h3>Ejercicio 5</h3>
+  <button onclick="mostrar()">Mostrar Datos</button>
+  <pre id="resultado"></pre>
+  <script>
+    function mostrar() {
+      const nombres = ["Luis", "Ana"];
+      const ap_p = ["Gomez", "Rojas"];
+      const ap_m = ["Soto", "Fernandez"];
+      const fechas = ["2000-01-01", "2001-02-02"];
+      const edades = [23, 22];
+      const notas = [18, 19];
+      const estaturas = [1.75, 1.60];
+      const pesos = [70, 55];
+        let salida = "";
+      for (let i = 0; i < nombres.length; i++) {
+        salida += Persona ${i+1}:\nNombre: ${nombres[i]} ${ap_p[i]} ${ap_m[i]}\n;
+        salida += Fecha Nacimiento: ${fechas[i]}, Edad: ${edades[i]}\n;
+        salida += Nota: ${notas[i]}, Estatura: ${estaturas[i]}m, Peso: ${pesos[i]}kg\n\n;
+      }
+      document.getElementById("resultado").innerText = salida;
+    }
+  </script>
+</body>
+</html>
+

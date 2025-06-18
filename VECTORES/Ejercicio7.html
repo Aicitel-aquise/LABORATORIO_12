@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 7</title></head>
+<body>
+  <h3>Ejercicio 7</h3>
+  <button onclick="filtrar()">Filtrar</button>
+  <div id="resultado"></div>
+  <script>
+    function filtrar() {
+      const V = [80, 150, 200, 50, 120];
+      const mayores = V.filter(n => n > 100);
+      document.getElementById("resultado").innerText = "Mayores a 100: [" + mayores.join(", ") + "]";
+    }
+  </script>
+</body>
+</html>
+

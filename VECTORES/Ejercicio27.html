@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 27</title></head>
+<body>
+  <h3>Ejercicio 27</h3>
+  <button onclick="insertar()">Insertar</button>
+  <div id="resultado"></div>
+  <script>
+    function insertar() {
+      let V = [1, 2, 3, 4];
+      let valor = parseInt(prompt("Número a insertar:"));
+      let pos = parseInt(prompt("Posición (0 a " + V.length + "):"));
+      if (!isNaN(valor) && !isNaN(pos) && pos >= 0 && pos <= V.length) {
+        V.splice(pos, 0, valor);
+        document.getElementById("resultado").innerText = "Nuevo vector: [" + V.join(", ") + "]";
+      } else {
+        document.getElementById("resultado").innerText = "Datos inválidos.";
+      }
+    }
+  </script>
+</body>
+</html>
+
+

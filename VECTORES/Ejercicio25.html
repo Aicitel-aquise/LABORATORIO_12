@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 25</title></head>
+<body>
+  <h3>Ejercicio 25</h3>
+  <button onclick="multiplicarVectores()">Multiplicar vectores</button>
+  <div id="resultado"></div>
+  <script>
+    function multiplicarVectores() {
+      const A = [2, 3, 4];
+      const B = [5, 6, 7];
+      const C = A.map((val, i) => val * B[i]);
+      document.getElementById("resultado").innerText = "C = [" + C.join(", ") + "]";
+    }
+  </script>
+</body>
+</html>
+
